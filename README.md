@@ -6,9 +6,12 @@
 
 El proyecto se realizo en Nestjs en el caso del servidor y se tiene que utilizar las siguientes configuraciones para que corra correctamente:
 
-Primero se debe crear una carpeta en los cuales se clonaran los proyectos estas tienen como nombre cliente y servidor.
+Primero se debe crear una carpeta en los cuales se clonaran los proyectos estas tienen como nombre clienteproyecto-master y servidorProyecto-master.
 
-Una vez clonada la carpeta servidor se debera proceder con la instalacion de mysql y  con la creacion de una base de datos para el proyecto con las siguientes configuraciones:
+El enlace de git hub es https://github.com/julio7esteban/servidorProyecto
+
+Una vez clonado el repositorio servidor se debera proceder con la instalacion de mysql y  con la creacion de una base de datos para el proyecto con las siguientes configuraciones:
+
 type: 'mysql',// type database  
 			host:'localhost',//server  database
 			port:3306, // port the database
@@ -16,15 +19,28 @@ type: 'mysql',// type database
 			password: '', 
 			database:'proyectoprueba',
 
-Si sse requiere cambiar alguna configuracion descritas anteriormente este cambio se debe realizar en el archivo database.module.ts que se encuentra en la  siguiente ruta  ./src/modules/database-module/database.module.ts. 
+Si se requiere cambiar alguna configuracion descritas anteriormente este cambio se debe realizar en el archivo database.module.ts que se encuentra en la  siguiente ruta  ./src/modules/database-module/database.module.ts. 
 
 
-Una vez que se procedio a crear la  base de datos con el nombre  "proyectoprueba"  se procede a correr el siguiente comando "npm init" ya que instalara todas las dependencias del package json que se encuentran en nuestro proyecto , si no le funciona primero se debera instalar nodejs en el siguiente enlace https://nodejs.org/es/download/ y tambien se deve instalar npm 
+Se procede  a crear la  base de datos con el nombre  "proyectoprueba" en el motor de mysql y
+ se procede a correr el siguiente comando:
+ 
+ "npm install" 
+ 
+ en la raiz del proyecto ya que instalara todas las dependencias del package json que se encuentran en nuestro proyecto ,
+  si no le funciona primero se debera instalar nodejs en el siguiente enlace https://nodejs.org/es/download/ para ejecutar el comando npm
 
-Luego de instalar y ejecutar el comando "npm init" para instalar las dependencias  ejecute el comando "npm run start" se generaran automaticamente las migraciones y creacion de tablas y con esto el lado del servidor estara levantado.
+Luego de instalar y ejecutar el comando "npm install" para instalar las dependencias  
+ejecute el comando:
+
+"npm run start" 
+
+se generaran automaticamente las migraciones y creacion de tablas y con esto el lado del servidor estara levantado.
 
 A su ves tambien ya estara disponible la api rest para que se consumir de ellas.
 
+Este se le configuro con el puerto 4000 ya que en el lado del cliente se le puso este para que se conectara 
+con el servidor este se puede ver en main.ts
 
 ## Installation
 
