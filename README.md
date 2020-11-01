@@ -19,9 +19,9 @@ type: 'mysql',// type database
 Si sse requiere cambiar alguna configuracion descritas anteriormente este cambio se debe realizar en el archivo database.module.ts que se encuentra en la  siguiente ruta  ./src/modules/database-module/database.module.ts. 
 
 
-Una vez que se procedio a crear la  base de datos con el nombre  "proyectoprueba"  se procede a correr el servidor con el npm run start , si no le funciona primero se debera instalar nodejs en el siguiente enlace https://nodejs.org/es/download/
+Una vez que se procedio a crear la  base de datos con el nombre  "proyectoprueba"  se procede a correr el siguiente comando "npm init" ya que instalara todas las dependencias del package json que se encuentran en nuestro proyecto , si no le funciona primero se debera instalar nodejs en el siguiente enlace https://nodejs.org/es/download/ y tambien se deve instalar npm 
 
-Una vez que se ejecute el comando "npm run start" se generaran automaticamente las migraciones y creacion de tablas y con esto el lado del servidor estara levantado.
+Luego de instalar y ejecutar el comando "npm init" para instalar las dependencias  ejecute el comando "npm run start" se generaran automaticamente las migraciones y creacion de tablas y con esto el lado del servidor estara levantado.
 
 A su ves tambien ya estara disponible la api rest para que se consumir de ellas.
 
